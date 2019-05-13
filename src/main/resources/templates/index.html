@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>OAuth2Demo</title>
+</head>
+<body>
+	<p>
+		Hello, <span th:text="${#authentication.principal.name}"></span>
+	</p>
+	<p>
+		You are Logged In With, <span
+			th:text="${#authentication.principal.oAuthProvider}"></span>
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a th:href="@{/logout}">Logout</a>
+</body>
+</html>
